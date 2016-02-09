@@ -8,13 +8,13 @@ import spock.lang.Specification
 class AlwaysSuccessValidatorSpec extends Specification {
     def "should always return true when AlwaysSuccessValidator is invoked"() {
         expect:
-        result = new AlwaysSuccessValidator().validate(value).isValid()
+        result == new AlwaysSuccessValidator().validate(value).isValid()
 
         where:
-        result  || value
-        null    || true
-        ""      || true
-        "value" || true
-        "1"     || true
+        result || value
+        true   || null
+        true   || ""
+        true   || "value"
+        true   || "1"
     }
 }
