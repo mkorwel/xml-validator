@@ -3,6 +3,9 @@ version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
 apply plugin: 'groovy'
+apply plugin: 'application'
+
+mainClassName = "pl.mkorwel.xml.validator.application.sample.Sample"
 
 sourceCompatibility = 1.8
 

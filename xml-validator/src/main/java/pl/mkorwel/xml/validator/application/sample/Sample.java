@@ -7,6 +7,8 @@ import pl.mkorwel.xml.validator.parser.XmlValidator;
  */
 public class Sample {
 	public static void main(String args[]) {
+		System.out.println("Program started !!!\n");
+
 		XmlValidator parser = new XmlValidator();
 		parser.validate("src/main/resources/sample.xml");
 	}
