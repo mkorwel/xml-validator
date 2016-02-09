@@ -1,0 +1,24 @@
+group 'pl.mkorwel.xml.validator'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'groovy'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.squareup:javapoet:1.5.1'
+    compile 'com.google.auto.service:auto-service:1.0-rc2'
+    compile 'org.projectlombok:lombok:1.16.6'
+
+    testCompile 'org.codehaus.groovy:groovy-all:2.4.1'
+    testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
+
+    testRuntime 'cglib:cglib-nodep:3.1'
+    testRuntime 'org.objenesis:objenesis:2.1'
+}
